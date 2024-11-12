@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Suhu dan Kelembapan</title>
+    <!-- Link ke file CSS eksternal -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Data Suhu dan Kelembapan</h1>
+
+        <!-- Bagian Informasi Suhu (Maksimum, Minimum, Rata-rata) -->
+        <div class="suhu-info">
+            <div class="suhu-card">
+                <div class="icon">🌡️</div>
+                <h3>Suhu Maksimum</h3>
+                <p id="suhu-max">36°C</p>
+            </div>
+            <div class="suhu-card">
+                <div class="icon">❄️</div>
+                <h3>Suhu Minimum</h3>
+                <p id="suhu-min">23°C</p>
+            </div>
+            <div class="suhu-card">
+                <div class="icon">📊</div>
+                <h3>Suhu Rata-rata</h3>
+                <p id="suhu-avg">28.35°C</p>
+            </div>
+        </div>
+
+        <!-- Bagian Nilai Suhu Max & Humid Max -->
+        <div class="section fade-in" id="nilai-suhu-humid">
+            <h2>Nilai Suhu Max & Humid Max</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Suhu (°C)</th>
+                        <th>Humid (%)</th>
+                        <th>Kecerahan</th>
+                        <th>Timestamp</th>
+                    </tr>
+                </thead>
+                <tbody id="nilai-suhu-tbody">
+                    <!-- Data akan dimasukkan oleh JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Bagian Maks Bulan-Tahun -->
+        <div class="section fade-in" id="month-year-max">
+            <h2>Maks Bulan-Tahun</h2>
+            <div class="month-section" id="month-year-container">
+                <!-- Data Maks Bulan-Tahun akan dimasukkan di sini -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Link ke file JavaScript eksternal -->
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
